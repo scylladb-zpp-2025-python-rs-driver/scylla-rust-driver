@@ -20,7 +20,6 @@ pub use single_target::{NodeIdentifier, SingleTargetLoadBalancingPolicy};
 
 /// Represents info about statement that can be used by load balancing policies.
 #[derive(Default, Clone, Debug)]
-#[non_exhaustive]
 pub struct RoutingInfo<'a> {
     /// Consistency level for the request.
     pub consistency: types::Consistency,
