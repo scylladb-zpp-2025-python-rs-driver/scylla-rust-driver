@@ -29,7 +29,7 @@ use super::node::{Node, NodeRef};
 pub struct ClusterState {
     /// All nodes known to be part of the cluster, accessible by their host ID.
     /// Often refered to as "topology metadata".
-    pub(crate) known_peers: HashMap<Uuid, Arc<Node>>, // Invariant: nonempty after Cluster::new()
+    pub known_peers: HashMap<Uuid, Arc<Node>>, // Invariant: nonempty after Cluster::new()
 
     /// Contains the same set of nodes as `known_peers`.
     ///
